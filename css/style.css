@@ -170,16 +170,35 @@ body {
         position: relative;
     }
 
-    .main-section-image {
-        position: absolute;
-        content: "";
-        bottom: -6.5rem;
-        left: 50%;
-        margin: 0;
-        transform: translate(-50%);
+    .main-section-image-athlets {
+        background: url(../img/footballer_192.png) ;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+		top: 0.4rem;
+		left: 0.6rem;
+		width: 100%;
+		max-width: 64rem;
+		height: 28.1rem;
+        margin: 0 auto -50px;
+        background-size: contain;
+        
+    }
+
+    .main-section-image-players {
+        position: relative;
+		top: 0.6rem;
+		left: 0;
+		width: 100%;
+		height: 24.8rem;
+		margin: 0 auto -1.9rem;
+		background: url(../img/basketballer_302.png);
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
     }
+
+
 
     .main-section:last-child .main-section-image {
         bottom: -3.5rem;
@@ -188,7 +207,6 @@ body {
     .main-section-title {
         flex-grow: 1;
         padding-left: 2rem;
-        padding-bottom: 23rem;
         font-size: 5rem;
         font-weight: bold;
         color: #e7e7e7;
@@ -368,7 +386,10 @@ body {
         width: 7.2rem;
         height: 7.4rem;
         background-color: #5e42b0;
-        border-radius: 1.4rem;
+        background: linear-gradient(to bottom, #7454d1, #50379b);
+
+        border-radius: 15px;
+        transition: all 0.5s ease-in-out;
     }
 
     .footer-logo-small {
@@ -457,5 +478,431 @@ body {
         padding-bottom: 1rem;
         width: 13rem;
         fill: #ffffff;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        min-height: 96rem;
+        background-image: url(../img/football_767.jpg);
+        background-size: cover;
+    }
+
+
+    .main-section-image-athlets {
+		position: absolute;
+		top: 8rem;
+		left: -16rem;
+		width: 100%;
+		height: 600px;
+		background: url(../img/footballer_497.png) no-repeat;
+		background-size: contain;
+    }
+    .main-section-image-players  {
+		position: absolute;
+        top: 3rem;
+        left: 36rem;
+		width: 100%;
+		height: 53.3rem;
+		background: url(../img/basketballer_436.png) no-repeat;
+		background-size: contain;
+    }
+
+    .header-logo {
+        padding-top: 4rem;
+        margin-bottom: 14.5rem;
+        width: 20rem;
+    }
+
+    .header-container {
+        font-size: 6.4rem;
+    }
+
+    .header-title {
+        width: 58.8rem;
+    }
+
+    .header-subtitle {
+        width: 64.8rem;
+        padding-top: 0;
+        padding-left: 11.5rem;
+        padding-bottom: 30rem;
+    }
+
+    .header-buttons {
+        justify-content: space-between;
+        width: 99vw;
+        max-width: 64.8rem;
+        padding-bottom: 6rem;
+        margin: 0 auto;
+    }
+
+    .header-button {
+        width: 29rem;
+        min-height: 7.7rem;
+        margin: 0;
+        font-size: 1.4rem;
+        border-radius: 3.6rem;
+    }
+
+    .header-button-logo {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2.5rem;
+    }
+
+    .header-button-container {
+        width: 100%;
+    }
+
+    .header-button-container-again {
+        width: auto;
+    }
+
+    .header-button-text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-section {
+        margin-top: 0;
+    }
+
+    .main-section-image {
+        top: 10.5rem;
+        left: 0;
+        transform: translate(-33%);
+    }
+
+    .main-section:nth-child(2n) .main-section-image {
+        top: 5rem;
+        left: unset;
+        right: 0;
+        transform: none;
+    }
+
+    .main-section-title {
+        padding-top: 7rem;
+        padding-left: 29.5rem;
+        padding-bottom: 0;
+        font-size: 8rem;
+    }
+
+    .main-section:nth-child(2n) .main-section-title {
+        padding-left: 3.2rem;
+    }
+
+    .main-section-article:nth-child(3n) {
+        background-color: #ffffff;
+    }
+
+    .main-section-article-title, .main-section-article-text {
+        width: auto;
+        margin-left: 29.5rem;
+        margin-right: 3.7rem;
+    }
+
+    .main-section:nth-child(2n) .main-section-article-title, .main-section:nth-child(2n) .main-section-article-text {
+        margin-left: 3.2rem;
+        margin-right: 32rem;
+    }
+
+    .main-section-article-title {
+        margin-top: 3.5rem;
+        font-size: 3.2rem;
+    }
+
+    .main-section-article-title-number {
+        font-size: 1.8rem;
+    }
+
+    .main-section-article:first-of-type .main-section-article-title {
+        margin-top: 2.5rem;
+    }
+
+    .main-section-article-text {
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
+
+    .aside-article-square {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        top: -8rem;
+        left: 3.5rem;
+        width: 11.6rem;
+        height: 11.6rem;
+        font-size: 2.4rem;
+    }
+
+    .aside-article-square-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        transform: translateY(0);
+    }
+
+    .aside-article-square-container-number {
+        font-size: inherit;
+    }
+
+    .aside-article-title {
+        font-size: 8rem;
+        padding-right: 3.5rem;
+        margin-top: 7.5rem;
+    }
+
+    .aside-article-text {
+        padding-right: 3.5rem;
+        margin-bottom: 9.5rem;
+        font-size: 2.4rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .footer {
+        background-image: url(../img/game_1280.jpg);
+    }
+
+    .footer-logo-small-container {
+        margin-top: 13rem;
+        margin-bottom: 7rem;
+        width: 13rem;
+        height: 13.5rem;
+        border-radius: 2.4rem;
+    }
+
+    .footer-logo-small {
+        width: 10rem;
+    }
+
+    .footer-title {
+        font-size: 8rem;
+    }
+
+    .footer-subtitle {
+        padding-bottom: 27rem;
+        font-size: 3.6rem;
+    }
+
+    .footer-buttons {
+        width: 99vw;
+        max-width: 64.8rem;
+        justify-content: space-between;
+        letter-spacing: normal;
+    }
+
+    .footer-button {
+        width: 29rem;
+        min-height: 7.7rem;
+        margin: 0;
+        font-size: 1.4rem;
+        border-radius: 3.6rem;
+    }
+
+    .footer-button-logo {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2.5rem;
+    }
+
+    .footer-button-container {
+        width: 100%;
+    }
+
+    .footer-button-container-again {
+        width: auto;
+    }
+
+    .footer-button-text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        width: 20rem;
+        margin: 6rem auto 0 auto;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (min-width: 961px) {
+    .header {
+        background-image: url(.../img/football_1920.jpg);
+    }
+
+    .main-section-image-athlets {
+        position: absolute;
+        top: 2.9rem;
+        left: 30rem;
+		width: 100%;
+		height: 90rem;
+		background: url(../img/footballer_566.png) no-repeat;
+
+    }
+    .main-section-image-players {
+        position: absolute;
+		width: 58%;
+        right: 0;
+        left: 70rem;
+		height: 85rem;
+        background: url(../img/basketballer_991.png) no-repeat;
+    
+    }
+
+    .header-container {
+        font-size: 9rem;
+    }
+
+    .header-logo {
+        margin-bottom: 27rem;
+    }
+
+    .header-title, .header-subtitle {
+        max-width: 1700px;
+    }
+    .header-title {
+        width: 81.25%;
+    }
+
+    .header-subtitle {
+        width: 100%;
+        padding-left: 25vw;
+        padding-bottom: 20rem;
+        line-height: 1.0;
+    }
+
+    .header-buttons {
+        width: 67rem;
+        padding-bottom: 10rem;
+    }
+
+    .main-section-image {
+        top: 2rem;
+        left: calc(50% - 566px);
+        transform: translate(0);
+    }
+
+    .main-section:nth-child(2n) .main-section-image {
+        top: 2rem;
+        left: 41.6vw;
+        transform: translate(0);
+    }
+
+    .main-section-title {
+        padding-top: 10rem;
+        padding-left: 52%;
+        padding-bottom: 5rem;
+        font-size: 8rem;
+    }
+
+    .main-section:nth-child(2n) .main-section-title {
+        box-sizing: border-box;
+        padding-left: 9.375%;
+        width: 41.6vw;
+    }
+
+    .main-section-article-title, .main-section-article-text {
+        margin-left: 52%;
+        margin-right: 9.375%;
+    }
+
+    .main-section:nth-child(2n) .main-section-article-title, .main-section:nth-child(2n) .main-section-article-text {
+        margin-left: 9.375%;
+        margin-right: 52%;
+    }
+
+    .main-section-article-title {
+        margin-top: 5rem;
+        font-size: 3.6rem;
+    }
+
+    .main-section-article-text {
+        margin-bottom: 5rem;
+        font-size: 2rem;
+    }
+
+    .aside-article {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .aside-article-image, .aside-article-container {
+        width: 50%;
+    }
+
+    .aside-article-title, .aside-article-text {
+        margin: 0 9.375% 0 12rem;
+        padding: 0;
+        width: auto;
+    }
+
+    .aside-article-title {
+        margin-bottom: 10rem;
+        line-height: 1;
+    }
+
+    .aside-article:nth-child(2n) .aside-article-image {
+        order: 1;
+    }
+
+    .aside-article:nth-child(2n) .aside-article-text, .aside-article:nth-child(2n) .aside-article-title {
+        margin-left: 9.375%;
+        margin-right: 12rem;
+    }
+
+    .aside-article-container {
+        position: static;
+        padding: 3rem 0;
+    }
+
+    .aside-article-square {
+        top: 21rem;
+        left: calc(50% - 8.3rem);
+        width: 16.6rem;
+        height: 15.5rem;
+    }
+
+    .footer {
+        background-image: url(.../img/game_1920.jpg);
+    }
+
+    .footer-title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 23rem;
+        width: 80%;
+        margin: 0 auto 12rem auto;
+    }
+
+    .footer-logo-small-container {
+        margin: 0;
+    }
+
+    .footer-title {
+        margin: 0 0 0 2.5rem;
+        letter-spacing: 0.3vw;
+        text-align: left;
+    }
+
+    .footer-subtitle {
+        padding-bottom: 2rem;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    .footer-logo {
+        margin: 25rem auto 0 auto;
+        padding-bottom: 5rem;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .aside-article-square-container {
+        width: 17%;
     }
 }
