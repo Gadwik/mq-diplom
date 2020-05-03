@@ -730,7 +730,7 @@ body {
 
 @media (min-width: 961px) {
     .header {
-        background-image: url(.../img/football_1920.jpg);
+        background-image: url(../img/football_1920.jpg);
     }
 
     .main-section-image-athlets {
@@ -870,7 +870,7 @@ body {
     }
 
     .footer {
-        background-image: url(.../img/game_1920.jpg);
+        background-image: url(../img/game_1920.jpg);
     }
 
     .footer-title-container {
